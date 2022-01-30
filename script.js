@@ -35,11 +35,10 @@ function compute()
             principal + "</mark>,\<br\>at an interest rate of <mark>" +
             rate + "% </mark>\<br\>You will receive an amount of <mark>" +
             amount + "</mark>,\<br\>in the year <mark>" + year + "</mark>\<br\>";
-
+            document.getElementById("result").innerHTML=resultText; // write resulting text
     } else {
-        resultText = "Enter a positive number"
+        alert("Enter a positive number");
+        document.getElementById("principal").focus(); // return user to enter the principal amount again
     }
-    
-    document.getElementById("result").innerHTML=resultText; // write resulting text
-    document.getElementById("principal").focus(); // return user to enter the principal amount again
 }
+
