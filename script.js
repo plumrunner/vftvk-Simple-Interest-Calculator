@@ -4,7 +4,7 @@ function updateRate()
     Updates the rate shown in the gui to match the value of the slider position.
     */
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+    document.getElementById("rate_val").innerText=rateval+"%";
 }
 
 
@@ -40,5 +40,6 @@ function compute()
         alert("Enter a positive number");
         document.getElementById("principal").focus(); // return user to enter the principal amount again
     }
+    return false
 }
 

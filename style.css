@@ -18,7 +18,7 @@ h1 {
     margin:auto;
 }
 
-.maindiv .subdiv {
+.maindiv .subdiv{
     margin:auto;
     width: 300px;
 }
@@ -26,6 +26,29 @@ h1 {
 mark {
     background-color: yellow;
     color: black;
+}
+
+#formentry {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 5px;
+    column-gap: 10px;
+}
+
+#formentry label {
+    grid-column: 1;
+}
+
+#formentry input {
+    grid-column: 2;
+}
+
+#years {
+    width: min-content;
+}
+
+#submitBtn {
+    font-size: 18px;
 }
 
 
